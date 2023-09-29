@@ -427,6 +427,7 @@ header .profil img.meicon {
 .zone6 .icon section p {
   color: #000;
   font-size: 0.8rem;
+  text-decoration: none;
 }
 
 .presentation {
