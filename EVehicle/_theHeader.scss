@@ -1,0 +1,113 @@
+header {
+    margin: 0;
+
+    .greenheadzone {
+        background-color: $greenColor;
+
+        .textforzone {
+            padding-top: 5px;
+
+            p {
+                font-size: 1rem;
+                color: #fff;
+                padding-top: 10px;
+            }
+
+            button {
+                background-color: #fff;
+                color: black;
+                font-size: 0.7rem;
+                width: 100px;
+                height: 30px;
+                margin-left: 10px;
+                border: 0px solid #000;
+
+                &:hover {
+                    color: $greenColor;
+                }
+            }
+        }
+
+        .localisation {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+
+            p {
+                color: #fff;
+                font-size: 1rem;
+                padding-top: 15px;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .contacthead {
+        background-color: #E7F0F7;
+
+        img {
+            width: 250px;
+            height: 70px;
+        }
+
+        .contactzone {
+            gap: 20px;
+
+            .telemail {
+                gap: 15px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    border: 2px solid $greenColor;
+                    border-radius: 50%;
+                    padding: 10px;
+                }
+
+                section {
+                    padding-top: 15px;
+                    margin-left: 10px;
+
+                    p {
+                        margin-bottom: -20px;
+                    }
+                }
+            }
+
+            .socialhead {
+                .iconsocialhead {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    padding: 5px;
+                    text-align: center;
+                    margin-left: 5px;
+
+                    img {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    nav.navbar {
+        padding: 5px 50px;
+
+        a {
+            color: #000;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 1s ease-in-out;
+
+            &:hover {
+                color: $greenColor;
+            }
+        }
+
+    }
+}

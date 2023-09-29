@@ -1,0 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.-container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+$greenColor: #1DD195;
+
+.security {
+    width: 100vw;
+    text-align: center;
+    padding: 5px;
+    background-color: #052730;
+
+    p {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+}

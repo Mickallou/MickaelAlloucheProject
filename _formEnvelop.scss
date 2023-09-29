@@ -1,0 +1,91 @@
+.zone5 {
+    width: 100vw;
+    background-color: #3A3A3A;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+
+    .imgEnvelope {
+
+        img {
+            width: 500px;
+            height: 500px;
+
+            @include tablet {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+    }
+
+    section {
+        padding-right: 200px;
+        text-align: end;
+        padding-top: 50px;
+
+        h1 {
+            color: #fff;
+            font-size: 3rem;
+        }
+
+        p {
+            color: #fff;
+            font-size: 1rem;
+            opacity: 0.7;
+            margin-top: 20px;
+
+        }
+
+        form {
+            color: #fff;
+            font-size: 0.8rem;
+            margin-top: 20px;
+
+            input[type=text],
+            input[type=email],
+            input[type=number] {
+                width: 500px;
+                height: 30px;
+                border-bottom: 4px solid #1AE0EC;
+                margin-top: 3px;
+                margin-bottom: 10px;
+
+
+                @include tablet {
+                    width: 80vw;
+                }
+            }
+
+            textarea {
+                resize: none;
+                width: 500px;
+                height: 100px;
+                border-bottom: 4px solid #1AE0EC;
+
+                @include tablet {
+                    width: 80vw;
+                }
+            }
+
+            input[type=button] {
+                width: 120px;
+                height: 30px;
+                border-radius: 25px;
+                background-color: #1AE0EC;
+                font-size: 1rem;
+                color: #3A3A3A;
+                margin-top: 20px;
+
+            }
+        }
+
+        @include tablet {
+            padding-right: 30px;
+        }
+    }
+
+    @include tablet {
+        flex-direction: column;
+    }
+}

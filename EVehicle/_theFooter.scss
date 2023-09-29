@@ -1,0 +1,152 @@
+footer {
+    width: 100vw;
+    background-image: url(image/asset\ 22.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    .footnav {
+        width: 100vw;
+        background-color: rgba(24, 54, 64, 0.9);
+
+        padding: 60px 20px;
+
+        @media (max-width: 1030px) {
+            flex-direction: column;
+            gap: 60px;
+        }
+
+        section.sec1 {
+            text-align: start;
+
+            img {
+                width: 250px;
+                height: 50px;
+            }
+
+            p {
+                font-size: 1.5rem;
+                color: #fff;
+                font-weight: 300;
+            }
+
+
+            .telfoot,
+            .emailfoot {
+                margin-top: -15px;
+
+                img {
+                    width: 50px;
+                    height: 50px;
+                    padding: 10px;
+                }
+
+                h5 {
+                    color: #fff;
+                    margin-left: 5;
+                    margin-left: 10px;
+                }
+            }
+
+            .socialfoot {
+                gap: 10px;
+
+                .iconsocialfoot {
+                    width: 40px;
+                    height: 40px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    padding: 5px;
+                    text-align: center;
+                    margin-left: 5px;
+                }
+
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        section.sec2,
+        section.sec3 {
+            text-align: left;
+
+            h3 {
+                color: #fff;
+                font-size: 2rem;
+                padding-bottom: 20px;
+            }
+
+            .pg1,
+            .pg2,
+            .pg3,
+            .pg4,
+            .pg5,
+            .pg6 {
+
+                p.flech {
+                    color: $greenColor;
+                    font-size: 1.2rem;
+                    margin-top: -3px;
+                    transition: all 0.6s ease-in-out;
+                }
+
+                p.textp {
+                    color: #fff;
+                    transition: all 0.6s ease-in-out;
+                }
+
+
+
+                &:hover {
+                    p.flech {
+                        color: #fff;
+                    }
+
+                    p.textp {
+                        color: $greenColor;
+                    }
+                }
+            }
+        }
+
+        section.sec4 {
+            h3 {
+                color: #fff;
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+                color: #fff;
+                font-weight: 300;
+            }
+
+            form {
+                margin-top: -5px;
+
+                input[type=email] {
+                    width: 270px;
+                    height: 70px;
+                    border-radius: 10px;
+                    text-align: left;
+                    padding: 10px;
+                    font-size: 1.3rem;
+                }
+
+                input[type=button] {
+                    width: 270px;
+                    height: 70px;
+                    border-radius: 10px;
+                    background-color: $greenColor;
+                    margin-top: 10px;
+                    color: #fff;
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+div.barblue {
+  width: 100vw;
+  height: 7px;
+  background-color: rgba(19, 232, 241, 0.3882352941);
+}
+
+.privat {
+  width: 100vw;
+  background-color: #000;
+  color: #1AE0EC;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.privat p.name {
+  text-align: left;
+  padding-left: 5px;
+}
+.privat p.security {
+  text-align: right;
+  padding-right: 5px;
+}
+
+header {
+  width: 100vw;
+  margin: 0 auto;
+  height: 100px;
+  padding-left: 90px;
+  padding-right: 90px;
+  display: flex;
+  padding-top: 15px;
+}
+@media (max-width: 1030px) {
+  header {
+    height: 150px;
+  }
+}
+@media (max-width: 576px) {
+  header {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+}
+header .profil {
+  width: 30vw;
+  display: flex;
+}
+header .profil h1 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+@media (max-width: 1030px) {
+  header .profil h1 {
+    display: none;
+  }
+}
+header .profil img.meicon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 8px;
+}
+@media (max-width: 1030px) {
+  header .profil img.meicon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.navhead {
+  width: 70vw;
+}
+.navhead nav .hamburger {
+  display: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.navhead nav .hamburger:hover {
+  display: none;
+}
+.navhead nav .hamburger:hover + ul {
+  display: block;
+  width: 100px;
+  flex-direction: row;
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+.navhead nav .hamburger:hover + ul li {
+  width: 100px;
+  text-align: center;
+  height: 35px;
+}
+.navhead nav .hamburger:hover + ul li a {
+  color: #000;
+}
+@media (max-width: 1030px) {
+  .navhead nav .hamburger {
+    display: block;
+    font-size: 4rem;
+    color: #1AE0EC;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 10px;
+  }
+}
+.navhead nav ul {
+  display: flex;
+  justify-content: end;
+  flex-direction: row-reverse;
+}
+@media (max-width: 1030px) {
+  .navhead nav ul {
+    display: none;
+  }
+}
+.navhead nav ul li {
+  width: 150px;
+  height: 70px;
+  list-style: none;
+  text-align: center;
+  padding: 20px 5px 5px 5px;
+}
+.navhead nav ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+.navhead nav ul li a:hover {
+  color: #1AE0EC;
+}
+
+.zone1 {
+  background-image: url(image/header-background.png);
+  background-position: center center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 350px;
+}
+.zone1 .bgc {
+  width: 100vw;
+  height: 350px;
+  background-color: rgba(19, 232, 241, 0.5);
+  position: absolute;
+  text-align: center;
+  padding-top: 50px;
+}
+.zone1 .bgc section.text h1 {
+  font-size: 7rem;
+  color: #3A3A3A;
+}
+@media (max-width: 1030px) {
+  .zone1 .bgc section.text h1 {
+    font-size: 5.5rem;
+  }
+}
+.zone1 .bgc section.text p {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+.zone2 {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: -15px 1px 5px;
+}
+.zone2 img {
+  width: 100px;
+  height: 100px;
+  margin-left: 5px;
+}
+
+.zone3 {
+  width: 100vw;
+  padding: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.zone3 img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+.zone3 h1 {
+  margin-top: 20px;
+  font-size: 4.5rem;
+  color: #000;
+  font-weight: bold;
+}
+.zone3 p {
+  display: block;
+  width: 50vw;
+  margin: 20px auto;
+  font-size: 1.5rem;
+  color: #000;
+  opacity: 0.7;
+}
+.zone3 button {
+  margin-top: 20px;
+  width: 250px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #1AE0EC;
+}
+.zone3 button a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.zone4 {
+  width: 100vw;
+  background-color: #F6F6F6;
+  padding: 30px;
+  text-align: center;
+  padding-top: 70px;
+}
+.zone4 h1 {
+  font-size: 2rem;
+  color: #3A3A3A;
+}
+.zone4 p {
+  font-size: 1.5rem;
+  color: #000;
+  opacity: 0.8;
+}
+.zone4 .projectim {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-gap: 40px;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+.zone4 .projectim section {
+  width: 350px;
+  text-align: center;
+  background-color: #fff;
+  padding-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2666666667);
+  transition: all 0.2s ease;
+  border-radius: 10px;
+}
+.zone4 .projectim section:hover {
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.4549019608);
+}
+.zone4 .projectim section img.big {
+  padding-top: 10px;
+  width: 350px;
+  height: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2666666667);
+  border-radius: 10px 10px 0 0;
+}
+.zone4 .projectim section h2 {
+  font-size: 1.5rem;
+  color: #000;
+  margin-top: 5px;
+}
+.zone4 .projectim section p {
+  padding: 5px 10px;
+  font-size: 1rem;
+  color: #000;
+  opacity: 0.8;
+  margin-top: 5px;
+}
+.zone4 .projectim section .icon {
+  display: flex;
+  justify-content: center;
+}
+.zone4 .projectim section .icon img.small {
+  width: 70px;
+  height: 70px;
+}
+.zone4 .projectim section button {
+  width: 200px;
+  height: 30px;
+  margin-top: 10px;
+  background-color: #1AE0EC;
+  border-radius: 25px;
+}
+.zone4 .projectim section button a {
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+}
+@media (max-width: 1030px) {
+  .zone4 .projectim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.zone5 {
+  width: 100vw;
+  background-color: #3A3A3A;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.zone5 .imgEnvelope img {
+  width: 500px;
+  height: 500px;
+}
+@media (max-width: 1030px) {
+  .zone5 .imgEnvelope img {
+    width: 200px;
+    height: 200px;
+  }
+}
+.zone5 section {
+  padding-right: 200px;
+  text-align: end;
+  padding-top: 50px;
+}
+.zone5 section h1 {
+  color: #fff;
+  font-size: 3rem;
+}
+.zone5 section p {
+  color: #fff;
+  font-size: 1rem;
+  opacity: 0.7;
+  margin-top: 20px;
+}
+.zone5 section form {
+  color: #fff;
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+.zone5 section form input[type=text],
+.zone5 section form input[type=email],
+.zone5 section form input[type=number] {
+  width: 500px;
+  height: 30px;
+  border-bottom: 4px solid #1AE0EC;
+  margin-top: 3px;
+  margin-bottom: 10px;
+}
+@media (max-width: 1030px) {
+  .zone5 section form input[type=text],
+  .zone5 section form input[type=email],
+  .zone5 section form input[type=number] {
+    width: 80vw;
+  }
+}
+.zone5 section form textarea {
+  resize: none;
+  width: 500px;
+  height: 100px;
+  border-bottom: 4px solid #1AE0EC;
+}
+@media (max-width: 1030px) {
+  .zone5 section form textarea {
+    width: 80vw;
+  }
+}
+.zone5 section form input[type=button] {
+  width: 120px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: #1AE0EC;
+  font-size: 1rem;
+  color: #3A3A3A;
+  margin-top: 20px;
+}
+@media (max-width: 1030px) {
+  .zone5 section {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 1030px) {
+  .zone5 {
+    flex-direction: column;
+  }
+}
+
+.zone6 {
+  width: 100vw;
+  background-color: #1AE0EC;
+  padding: 20px;
+}
+.zone6 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.zone6 .icon section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.zone6 .icon section img {
+  width: 50px;
+  height: 50px;
+}
+.zone6 .icon section p {
+  color: #000;
+  font-size: 0.8rem;
+}
+
+.presentation {
+  width: 100vw;
+  background-color: #EBFEFF;
+  padding: 50px;
+}
+.presentation img {
+  display: block;
+  margin: 0 auto;
+  width: 1000px;
+  height: 700px;
+}
+@media (max-width: 1030px) {
+  .presentation img {
+    width: 500px;
+    height: 300px;
+  }
+}
+@media (max-width: 576px) {
+  .presentation img {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+.zone1 .bgc section.text .btndow button {
+  width: 150px;
+  height: 30px;
+  border-radius: 25px;
+  background-color: #1AE0EC;
+}
+.zone1 .bgc section.text .btndow button a {
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+}/*# sourceMappingURL=main.css.map */

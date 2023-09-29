@@ -1,0 +1,14 @@
+.zone2 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: -15px 1px 5px;
+
+
+    img {
+        width: 100px;
+        height: 100px;
+        margin-left: 5px;
+    }
+}

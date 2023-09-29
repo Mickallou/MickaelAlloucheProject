@@ -1,0 +1,43 @@
+.presentation {
+    width: 100vw;
+    background-color: #EBFEFF;
+    padding: 50px;
+
+    img {
+        display: block;
+        margin: 0 auto;
+        width: 1000px;
+        height: 700px;
+
+        @include tablet {
+            width: 500px;
+            height: 300px;
+        }
+
+        @include mobile {
+            width: 200px;
+            height: 100px;
+        }
+    }
+}
+
+.zone1 {
+    .bgc {
+        section.text {
+            .btndow {
+                button {
+                    width: 150px;
+                    height: 30px;
+                    border-radius: 25px;
+                    background-color: #1AE0EC;
+
+                    a {
+                        font-size: 1rem;
+                        color: #000;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
