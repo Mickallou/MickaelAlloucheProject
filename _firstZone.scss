@@ -5,15 +5,13 @@
     background-size: cover;
     background-attachment: fixed;
     width: 100vw;
-    height: 350px;
 
     .bgc {
         width: 100vw;
-        height: 350px;
         background-color: rgba(19, 232, 241, 0.5);
-        position: absolute;
         text-align: center;
         padding-top: 50px;
+        padding-bottom: 60px;
 
         section.text h1 {
             font-size: 7rem;

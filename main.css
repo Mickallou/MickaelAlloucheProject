@@ -94,22 +94,25 @@ header .profil img.meicon {
   position: absolute;
   top: 10px;
   right: 10px;
+  transition: all 0.5s ease-in-out;
 }
 .navhead nav .hamburger:hover {
   display: none;
 }
 .navhead nav .hamburger:hover + ul {
   display: block;
-  width: 100px;
-  flex-direction: row;
+  flex-direction: column;
   position: absolute;
-  top: -5px;
-  right: 10px;
+  margin-left: -35vw;
+  margin-top: 130px;
+  z-index: 100;
 }
 .navhead nav .hamburger:hover + ul li {
-  width: 100px;
+  width: 110vw;
   text-align: center;
   height: 35px;
+  padding: 0;
+  background-color: #fff;
 }
 .navhead nav .hamburger:hover + ul li a {
   color: #000;
@@ -158,15 +161,13 @@ header .profil img.meicon {
   background-size: cover;
   background-attachment: fixed;
   width: 100vw;
-  height: 350px;
 }
 .zone1 .bgc {
   width: 100vw;
-  height: 350px;
   background-color: rgba(19, 232, 241, 0.5);
-  position: absolute;
   text-align: center;
   padding-top: 50px;
+  padding-bottom: 60px;
 }
 .zone1 .bgc section.text h1 {
   font-size: 7rem;
