@@ -1,0 +1,340 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.-container {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.security {
+  width: 100vw;
+  text-align: center;
+  padding: 5px;
+  background-color: #052730;
+}
+.security p {
+  color: #fff;
+  font-size: 1.3rem;
+}
+
+header {
+  margin: 0;
+}
+header .greenheadzone {
+  background-color: #1DD195;
+}
+header .greenheadzone .textforzone {
+  padding-top: 5px;
+}
+header .greenheadzone .textforzone p {
+  font-size: 1rem;
+  color: #fff;
+  padding-top: 10px;
+}
+header .greenheadzone .textforzone button {
+  background-color: #fff;
+  color: black;
+  font-size: 0.7rem;
+  width: 100px;
+  height: 30px;
+  margin-left: 10px;
+  border: 0px solid #000;
+}
+header .greenheadzone .textforzone button:hover {
+  color: #1DD195;
+}
+header .greenheadzone .localisation img {
+  width: 20px;
+  height: 20px;
+}
+header .greenheadzone .localisation p {
+  color: #fff;
+  font-size: 1rem;
+  padding-top: 15px;
+  margin-left: 5px;
+}
+header .contacthead {
+  background-color: #E7F0F7;
+}
+header .contacthead img {
+  width: 250px;
+  height: 70px;
+}
+header .contacthead .contactzone {
+  gap: 20px;
+}
+header .contacthead .contactzone .telemail {
+  gap: 15px;
+}
+header .contacthead .contactzone .telemail img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #1DD195;
+  border-radius: 50%;
+  padding: 10px;
+}
+header .contacthead .contactzone .telemail section {
+  padding-top: 15px;
+  margin-left: 10px;
+}
+header .contacthead .contactzone .telemail section p {
+  margin-bottom: -20px;
+}
+header .contacthead .contactzone .socialhead .iconsocialhead {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  margin-left: 5px;
+}
+header .contacthead .contactzone .socialhead .iconsocialhead img {
+  width: 20px;
+  height: 20px;
+}
+header nav.navbar {
+  padding: 5px 50px;
+}
+header nav.navbar a {
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: all 1s ease-in-out;
+}
+header nav.navbar a:hover {
+  color: #1DD195;
+}
+
+.theprincipalzone {
+  width: 100vw;
+  background-image: url(Image/asset\ 21.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.theprincipalzone section {
+  background-color: rgba(24, 54, 64, 0.9);
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.theprincipalzone section h5 {
+  color: #1DD195;
+  font-weight: 800;
+}
+.theprincipalzone section h1 {
+  font-size: 4.5rem;
+  color: #fff;
+  font-weight: 900;
+}
+.theprincipalzone section p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.theprincipalzone section button {
+  width: 200px;
+  height: 60px;
+  background-color: #1DD195;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.thesecondezone {
+  width: 100vw;
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 70px;
+}
+.thesecondezone h2 {
+  position: relative;
+  color: black;
+  font-size: 3.5rem;
+  font-weight: 500;
+  z-index: 5;
+}
+.thesecondezone h3 {
+  position: relative;
+  color: #ccc;
+  font-size: 9rem;
+  font-weight: 900;
+  z-index: 1;
+  margin-top: -200px;
+  opacity: 0.7;
+}
+.thesecondezone p {
+  font-weight: 500;
+}
+
+footer {
+  width: 100vw;
+  background-image: url(image/asset\ 22.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+}
+footer .footnav {
+  width: 100vw;
+  background-color: rgba(24, 54, 64, 0.9);
+  padding: 60px 20px;
+}
+@media (max-width: 1030px) {
+  footer .footnav {
+    flex-direction: column;
+    gap: 60px;
+  }
+}
+footer .footnav section.sec1 {
+  text-align: start;
+}
+footer .footnav section.sec1 img {
+  width: 250px;
+  height: 50px;
+}
+footer .footnav section.sec1 p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 300;
+}
+footer .footnav section.sec1 .telfoot,
+footer .footnav section.sec1 .emailfoot {
+  margin-top: -15px;
+}
+footer .footnav section.sec1 .telfoot img,
+footer .footnav section.sec1 .emailfoot img {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+}
+footer .footnav section.sec1 .telfoot h5,
+footer .footnav section.sec1 .emailfoot h5 {
+  color: #fff;
+  margin-left: 5;
+  margin-left: 10px;
+}
+footer .footnav section.sec1 .socialfoot {
+  gap: 10px;
+}
+footer .footnav section.sec1 .socialfoot .iconsocialfoot {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  text-align: center;
+  margin-left: 5px;
+}
+footer .footnav section.sec1 .socialfoot img {
+  width: 20px;
+  height: 20px;
+}
+footer .footnav section.sec2,
+footer .footnav section.sec3 {
+  text-align: left;
+}
+footer .footnav section.sec2 h3,
+footer .footnav section.sec3 h3 {
+  color: #fff;
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+footer .footnav section.sec2 .pg1 p.flech,
+footer .footnav section.sec2 .pg2 p.flech,
+footer .footnav section.sec2 .pg3 p.flech,
+footer .footnav section.sec2 .pg4 p.flech,
+footer .footnav section.sec2 .pg5 p.flech,
+footer .footnav section.sec2 .pg6 p.flech,
+footer .footnav section.sec3 .pg1 p.flech,
+footer .footnav section.sec3 .pg2 p.flech,
+footer .footnav section.sec3 .pg3 p.flech,
+footer .footnav section.sec3 .pg4 p.flech,
+footer .footnav section.sec3 .pg5 p.flech,
+footer .footnav section.sec3 .pg6 p.flech {
+  color: #1DD195;
+  font-size: 1.2rem;
+  margin-top: -3px;
+  transition: all 0.6s ease-in-out;
+}
+footer .footnav section.sec2 .pg1 p.textp,
+footer .footnav section.sec2 .pg2 p.textp,
+footer .footnav section.sec2 .pg3 p.textp,
+footer .footnav section.sec2 .pg4 p.textp,
+footer .footnav section.sec2 .pg5 p.textp,
+footer .footnav section.sec2 .pg6 p.textp,
+footer .footnav section.sec3 .pg1 p.textp,
+footer .footnav section.sec3 .pg2 p.textp,
+footer .footnav section.sec3 .pg3 p.textp,
+footer .footnav section.sec3 .pg4 p.textp,
+footer .footnav section.sec3 .pg5 p.textp,
+footer .footnav section.sec3 .pg6 p.textp {
+  color: #fff;
+  transition: all 0.6s ease-in-out;
+}
+footer .footnav section.sec2 .pg1:hover p.flech,
+footer .footnav section.sec2 .pg2:hover p.flech,
+footer .footnav section.sec2 .pg3:hover p.flech,
+footer .footnav section.sec2 .pg4:hover p.flech,
+footer .footnav section.sec2 .pg5:hover p.flech,
+footer .footnav section.sec2 .pg6:hover p.flech,
+footer .footnav section.sec3 .pg1:hover p.flech,
+footer .footnav section.sec3 .pg2:hover p.flech,
+footer .footnav section.sec3 .pg3:hover p.flech,
+footer .footnav section.sec3 .pg4:hover p.flech,
+footer .footnav section.sec3 .pg5:hover p.flech,
+footer .footnav section.sec3 .pg6:hover p.flech {
+  color: #fff;
+}
+footer .footnav section.sec2 .pg1:hover p.textp,
+footer .footnav section.sec2 .pg2:hover p.textp,
+footer .footnav section.sec2 .pg3:hover p.textp,
+footer .footnav section.sec2 .pg4:hover p.textp,
+footer .footnav section.sec2 .pg5:hover p.textp,
+footer .footnav section.sec2 .pg6:hover p.textp,
+footer .footnav section.sec3 .pg1:hover p.textp,
+footer .footnav section.sec3 .pg2:hover p.textp,
+footer .footnav section.sec3 .pg3:hover p.textp,
+footer .footnav section.sec3 .pg4:hover p.textp,
+footer .footnav section.sec3 .pg5:hover p.textp,
+footer .footnav section.sec3 .pg6:hover p.textp {
+  color: #1DD195;
+}
+footer .footnav section.sec4 h3 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+footer .footnav section.sec4 p {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 300;
+}
+footer .footnav section.sec4 form {
+  margin-top: -5px;
+}
+footer .footnav section.sec4 form input[type=email] {
+  width: 270px;
+  height: 70px;
+  border-radius: 10px;
+  text-align: left;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+footer .footnav section.sec4 form input[type=button] {
+  width: 270px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #1DD195;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 1.3rem;
+}/*# sourceMappingURL=main.css.map */

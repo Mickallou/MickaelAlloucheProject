@@ -1,0 +1,43 @@
+.theprincipalzone {
+    width: 100vw;
+    background-image: url(Image/asset\ 21.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+
+    section {
+        background-color: rgba(24, 54, 64, 0.9);
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        h5 {
+            color: $greenColor;
+            font-weight: 800;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            color: #fff;
+            font-weight: 900;
+        }
+
+        p {
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        button {
+            width: 200px;
+            height: 60px;
+            background-color: $greenColor;
+            border-radius: 10px;
+            color: #fff;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+
+    }
+}

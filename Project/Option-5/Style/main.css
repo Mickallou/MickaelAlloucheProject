@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100vw;
+    background-color: #E5EEFF;
+    padding-top: 50px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.zone {
+    gap: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 200px);
+    grid-template-rows: repeat(6, 200px);
+    grid-template-areas:
+        "img1 img2 first first"
+        "img3 img4 first first"
+        "img5 img6 img7 img8"
+        "second second img9 img10"
+        "second second img11 img12"
+        "second second img13 img14";
+}
+
+.first {
+    background-color: #020253;
+    grid-area: first;
+    padding: 50px;
+    padding-top: 100px;
+}
+
+.first h1 {
+    color: #0EE1DA;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.first p {
+    color: #F9F9F9;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.img1 {
+    grid-area: img1;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+.img4 {
+    grid-area: img4;
+}
+
+.img5 {
+    grid-area: img5;
+}
+
+.img6 {
+    grid-area: img6;
+}
+
+.img7 {
+    grid-area: img7;
+}
+
+.img8 {
+    grid-area: img8;
+}
+
+.img9 {
+    grid-area: img9;
+}
+
+.img10 {
+    grid-area: img10;
+}
+
+.img11 {
+    grid-area: img11;
+}
+
+.img12 {
+    grid-area: img12;
+}
+
+.img13 {
+    grid-area: img13;
+}
+
+.img14 {
+    grid-area: img14;
+}
+
+.second {
+    grid-area: second;
+    background-color: #8E097C;
+    padding-top: 50px;
+}
+
+.second h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: #fff;
+}
+
+.second p {
+    padding-top: 20px;
+    font-size: 0.8rem;
+    text-align: center;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.second form {
+    padding-top: 50px;
+    padding-left: 30px;
+    font-size: 0.7rem;
+    color: #0EE1DA;
+}
+
+.second form input[type=text] {
+    width: 90%;
+    height: 25px;
+    border-bottom: 4px solid #0EE1DA;
+}
+
+.second form input[type=email] {
+    width: 90%;
+    height: 25px;
+    border-bottom: 4px solid #0EE1DA;
+}
+
+.second form textarea {
+    width: 90%;
+    height: 200px;
+    border-bottom: 4px solid #0EE1DA;
+    resize: none;
+}
+
+.second form input[type=button] {
+    width: 90%;
+    height: 50px;
+    background-color: #0EE1DA;
+    margin-top: 20px;
+    font-size: 1rem;
+
+}
+
+
+@media (max-width:870px) {
+    .zone {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: repeat(12, 200px);
+        grid-template-areas:
+            "first first"
+            "first first"
+            "img1 img2"
+            "img3 img4"
+            "img5 img6"
+            "img7 img8"
+            "second second"
+            "second second"
+            "second second"
+            "img9 img10"
+            "img11 img12"
+            "img13 img14";
+        gap: 15px;
+
+    }
+
+
+}

@@ -1,0 +1,294 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .container {
+            width: 100vw;
+        }
+
+        .bar1 {
+            width: 430px;
+            height: 18px;
+            background-color: #FDBD03;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .waicon {
+            width: 95px;
+            height: 95px;
+            background-color: #FDBD03;
+            border-radius: 50%;
+            padding: 20px;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+
+        .waicon img {
+            width: 55px;
+            height: 55px;
+        }
+
+        .thezone {
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: -60px;
+        }
+
+        .zone1 {
+            width: 50vw;
+            height: 800px;
+        }
+
+        .zone1 .text1 {
+            text-align: right;
+        }
+
+        .zone1 .text1 h1 {
+            font-size: 5rem;
+            color: #FDBD03;
+        }
+
+        .zone1 .text1 p {
+            margin-top: 10px;
+            font-size: 1.5rem;
+            color: #000;
+        }
+
+        .zone1 form {
+            margin-top: 25px;
+            text-align: right;
+            overflow: hidden;
+        }
+
+        .form1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+
+        .form2 {
+            display: flex;
+            justify-content: end;
+        }
+
+        .form1 section {
+            padding-left: 20px;
+        }
+
+        .form1 section input {
+            width: 300px;
+            height: 40px;
+            background-color: #E5EEFF;
+            border-bottom: 4px solid #FDBD03;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+        }
+
+        .form1 section textarea.textform {
+            width: 620px;
+            height: 150px;
+            resize: none;
+            background-color: #E5EEFF;
+            border-bottom: 4px solid #FDBD03;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+
+        }
+
+
+        .zone1 form input[type=button] {
+            width: 150px;
+            height: 50px;
+            margin-top: 70px;
+            background-color: #FDBD03;
+            color: #000;
+            font-size: 1.5rem;
+            border: 0px;
+        }
+
+
+        .zone2 {
+            width: 50vw;
+            height: 800px;
+            padding-left: 150px;
+        }
+
+        .zone2 img {
+            width: 400px;
+            height: 600px;
+        }
+
+        .socialicon {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .socialicon .icon {
+            width: 95px;
+            height: 95px;
+            background-color: #FDBD03;
+            border-radius: 50%;
+            padding: 20px;
+            margin-left: 40px;
+            margin-bottom: 10px;
+
+        }
+
+        .socialicon .icon img {
+            width: 55px;
+            height: 55px;
+
+        }
+
+        .bar2 {
+            width: 50vw;
+            height: 18px;
+            background-color: #FDBD03;
+            display: flex;
+            justify-content: start;
+        }
+
+        @media (max-width:1100px) {
+            .waicon {
+                display: none;
+            }
+
+            .thezone {
+                flex-direction: column-reverse;
+                width: 100vw;
+                margin-bottom: -150px;
+            }
+
+            .zone1,
+            .zone2 {
+                margin: 0 auto;
+                width: 100vw;
+            }
+
+            .zone1 h1 {
+                text-align: center;
+            }
+
+            .zone1 p {
+                text-align: center;
+            }
+
+            .zone1 .form1 {
+                flex-direction: column;
+            }
+
+            .zone1 form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+            .form2 {
+                flex-direction: column;
+            }
+
+            .form2 section input {
+                width: 500px;
+            }
+
+            .form1 section textarea.textform {
+                width: 500px;
+            }
+
+            .zone1 form input[type=button] {
+                width: 500px;
+                margin-top: 10px;
+                margin-right: -20px;
+            }
+
+            .zone2 {
+                width: 500px;
+                height: 550px;
+            }
+
+            .zone2 img {
+                width: 500px;
+                height: 550px;
+                margin-left: -75px;
+            }
+
+            .socialicon {
+                justify-content: space-evenly;
+            }
+
+            .bar2 {
+                width: 100vw;
+            }
+        }
+
+        @media (max-width:550px) {
+            .zone1 {
+                margin-top: -100px;
+            }
+
+            .zone1 .text1 h1 {
+                font-size: 2rem;
+            }
+
+            .zone1 .text1 p {
+                font-size: 1rem;
+            }
+
+
+
+            .form2 section input {
+                width: 300px;
+            }
+
+            .form1 section textarea.textform {
+                width: 300px;
+            }
+
+            .zone1 form input[type=button] {
+                width: 300px;
+                margin-top: 10px;
+                margin-right: -20px;
+            }
+
+            .zone2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            .zone2 img {
+                width: 300px;
+                height: 350px;
+                /* margin-left: -75px; */
+            }
+
+            .socialicon .icon {
+                width: 75px;
+                height: 75px;
+                background-color: #FDBD03;
+                border-radius: 50%;
+                padding: 20px;
+                margin-left: 40px;
+                margin-bottom: 10px;
+
+            }
+
+            .socialicon .icon img {
+                width: 35px;
+                height: 35px;
+
+            }
+
+
+        }

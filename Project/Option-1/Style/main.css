@@ -1,0 +1,92 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        .bgc1 {
+            width: 100vw;
+            height: 350px;
+            background-image: url(Image/Path\ 15.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .zone {
+            position: absolute;
+            top: 85px;
+            right: 155px;
+            width: 400px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px 25px 40px 25px;
+
+        }
+
+        .zone h1 {
+            margin-top: 25px;
+            text-align: center;
+            font-size: 2rem;
+            color: #fff;
+        }
+
+        .zone p {
+            font-size: 1rem;
+            color: #fff;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .zone form {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .zone form section {
+            margin-top: 10px;
+        }
+
+
+        .zone form section label {
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        .zone form input[type=text] {
+            width: 350px;
+            height: 30px;
+        }
+
+        .zone form input[type=button] {
+            width: 120px;
+            height: 40px;
+            margin-top: 30px;
+            background-color: #D31C75;
+            color: #fff;
+            font-size: 0.8rem;
+            border: 0px solid #000;
+        }
+
+        @media (max-width:1000px) {
+            .zone {
+                width: 80%;
+                right: 0;
+                left: 10%;
+            }
+
+            .zone form {
+                margin: 0 auto;
+            }
+
+            .zone form input[type=text] {
+                width: 100%;
+            }
+        }
