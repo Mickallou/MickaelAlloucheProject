@@ -291,7 +291,6 @@
 
         .zone2 .zone2img {
             width: 80vw;
-            height: 300px;
             margin: 0 auto;
             padding-top: 90px;
             display: flex;
@@ -349,6 +348,14 @@
 
             .zone2img section p {
                 font-size: 0.5rem;
+            }
+        }
+
+        @media (max-width:300px) {
+            .zone2img {
+                flex-direction: column;
+                padding-top: 10px;
+                padding-bottom: 10px;
             }
         }
 
