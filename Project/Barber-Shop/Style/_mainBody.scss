@@ -1,0 +1,174 @@
+.container-body {
+    width: 100vw;
+    background-color: #1C1C1C;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .zone-one {
+        width: 80vw;
+        margin: 0 auto;
+
+        h3 {
+            font-size: 1rem;
+            text-align: center;
+            color: #fff;
+            letter-spacing: 5px;
+        }
+
+        .haircuts {
+            padding-top: 25px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
+
+            section {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+
+                img {
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 50%;
+                    transition: all 0.3s ease-in-out;
+
+                    &:hover {
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
+
+                p {
+                    color: #fff;
+                    font-size: 1rem;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+            }
+
+        }
+    }
+
+    .zone-two {
+        width: 80vw;
+        margin: 0 auto;
+        padding-top: 60px;
+        padding-bottom: 40px;
+
+        section.icon {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                width: 20px;
+                height: 30px;
+            }
+
+            p {
+                color: $yellowWeb;
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
+        }
+
+        .aboutus {
+            section {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+
+                h1 {
+                    font-size: 4rem;
+                    color: #fff;
+                    font-family: Arial, Helvetica, sans-serif;
+                    font-weight: 900;
+                    letter-spacing: 8px;
+                }
+
+                .bg-about {
+                    width: 400px;
+                    height: 4px;
+                    border-top: 1px solid $yellowWeb;
+                    border-bottom: 1px solid $yellowWeb;
+                }
+            }
+
+            p {
+                padding-top: 15px;
+                column-count: 2;
+                column-gap: 20px;
+                color: #ccc;
+
+                @include mobile {
+                    column-count: 1;
+                }
+            }
+        }
+    }
+
+    .zone-three {
+        width: 100vw;
+        height: 600px;
+        background-image: url(Image/bg-image.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+
+        .bgi {
+            background-image: url(Image/asset\ 34.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: scroll;
+            width: 100vw;
+            height: 600px;
+        }
+    }
+
+    .zone-four {
+        width: 95vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 70px;
+
+        section {
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            background-image: url(Image/asset\ 45.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-attachment: scroll;
+            padding: 40px 20px;
+            margin-top: 15px;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            h3 {
+                color: $yellowWeb;
+            }
+
+            p {
+                color: #ccc;
+                opacity: 0.8;
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
