@@ -383,7 +383,7 @@ header .profil img.meicon {
     width: 80vw;
   }
 }
-.zone5 section form input[type=button] {
+.zone5 section form input[type=submit] {
   width: 120px;
   height: 30px;
   border-radius: 25px;
