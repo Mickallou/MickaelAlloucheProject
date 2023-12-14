@@ -1,3 +1,7 @@
+$colorBgc: #f1dec9;
+$colorHead: #a4907c;
+$colorText: #c8b6a6;
+
 * {
     margin: 0;
     padding: 0;
@@ -15,13 +19,13 @@ body {
 div.barblue {
     width: 100vw;
     height: 7px;
-    background-color: #13E8F163;
+    background-color: $colorBgc;
 }
 
 .privat {
     width: 100vw;
     background-color: #000;
-    color: #1AE0EC;
+    color: $colorText;
     font-size: 1rem;
     display: flex;
     align-items: center;

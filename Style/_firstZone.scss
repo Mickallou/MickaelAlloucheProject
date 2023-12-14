@@ -9,14 +9,14 @@
     .bgc {
         width: 100vw;
         // background-color: rgba(19, 232, 241, 0.5);
-        background-color: #f1dec9;
+        background-color: $colorBgc;
         text-align: center;
         padding-top: 50px;
         padding-bottom: 60px;
 
         section.text h1 {
             font-size: 7rem;
-            color: #a4907c;
+            color: $colorHead;
 
             @include tablet {
                 font-size: 5.5rem;
@@ -26,7 +26,7 @@
         section.text p {
             margin-top: 20px;
             font-size: 2rem;
-            color: #c8b6a6;
+            color: $colorText;
 
         }
 

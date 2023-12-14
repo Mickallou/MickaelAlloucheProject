@@ -1,7 +1,8 @@
 .presentation {
     width: 100vw;
-    background-color: #EBFEFF;
+    background-color: $colorBgc;
     padding: 50px;
+    box-shadow: -15px 1px 5px;
 
     img {
         display: block;
@@ -25,15 +26,24 @@
     .bgc {
         section.text {
             .btndow {
+                margin-top: 15px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 35px;
+
                 button {
                     width: 150px;
                     height: 30px;
                     border-radius: 25px;
-                    background-color: #1AE0EC;
+                    background-color: $colorHead;
+                    border: 1px solid #000;
+                    box-shadow: 0 0 10px #00000044;
 
                     a {
                         font-size: 1rem;
-                        color: #000;
+                        color: $colorText;
                         text-decoration: none;
                     }
                 }
